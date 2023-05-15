@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html land="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Аксиома - агентство недвижимости</title>
+
+	<!--  CSS  -->
+	<link rel="stylesheet" type="text/css" href="css/lib.css"/>
+	<link rel="stylesheet" href="css/template_styles.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="format-detection" content="telephone=no">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+</head>
+
+<!-- Класс .main добавляется тегу <body> только на главной странице -->
+<body>
+
+	<div class="popup__menu--inner md xs">
+		<div class="container">
+			<div class="popup__menu--wrap">
+				<div class="popup__menu--nav">
+					<ul>
+						<li><a href="about.html" class="header__menu--elem"><span>О компании</span></a></li>
+						<li><a href="object_list_property.html" class="header__menu--elem"><span>Недвижимость</span></a></li>
+						<li><a href="residential_complex.html" class="header__menu--elem"><span>Наши ЖК</span></a></li>
+						<li><a href="news.html" class="header__menu--elem"><span>Новости</span></a></li>
+						<li><a href="contacts.html" class="header__menu--elem"><span>Контакты</span></a></li>
+					</ul>
+				</div>
+				<div class="popup__menu--contacts">
+					<div class="popup__menu--number-wrap">
+						<a class="popup__menu--number" href="tel:+74212461155">+7 (473) 271-72-73</a>
+						<a class="popup__menu--number" href="tel:+78002228242">8 (800) 222 82 42</a>
+					</div>
+					<a class="popup__menu--email" href="mailto:aksiomavrn@mail.ru">aksiomavrn@mail.ru</a>
+					<a class="popup__menu--address" target="_blank" href="https://yandex.ru/maps/?text=Воронеж, ул. Пушкинская, 4А">394036, Воронеж, ул. Пушкинская, д. 4А, оф. 501, 5 эт.</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup__filter--inner md xs">
+		<div class="popup__filter--wrap">
+			<div class="popup__filter--top">
+				<span class="popup__filter--title">Фильтры</span>
+				<div class="popup__close"><img src="img/close.svg" alt="Закрыть"></div>
+			</div>
+			<div class="popup__filter--main">
+
+				<form class="header__search--wrap">
+							<div class="header__search--inner no-md">
+
+								<div class="popup__filter--main-row">
+
+					                <div class="district__search--picker search--picker">
+					                    <input type="text" class="search-picker__button" placeholder="Выберите район" value="" readonly>
+					                    <div class="search-picker__list-container">
+					                        <div class="search-picker__list-container-wrap">
+					                            <ul class="search-picker__list">
+					                                <li class="search-picker__status" title="Воронежская область">
+					                                	<label>
+						                                	<input type="checkbox" name="district[voronezh_district]">
+															<span>Воронежская область</span>
+														</label>
+					                                </li>
+					                                <li class="search-picker__status" title="Железнодорожный район">
+					                                	<label>
+						                                	<input type="checkbox" name="district[jd_district]">
+															<span>Железнодорожный район</span>
+														</label>
+					                                </li>
+					                                <li class="search-picker__status" title="Центрально-Черноземный район ">
+					                                	<label>
+						                                	<input type="checkbox" name="district[central_chernoz_district]">
+															<span>Центрально-Черноземный район</span>
+														</label>
+					                                </li>
+					                                <li class="search-picker__status" title="Коминтерновский район">
+					                                	<label>
+						                                	<input type="checkbox" name="district[komintern_district]">
+															<span>Коминтерновский район</span>
+														</label>
+					                                </li>
+					                                <li class="search-picker__status" title="Левобережный район">
+					                                	<label>
+						                                	<input type="checkbox" name="district[levobereg_district]">
+															<span>Левобережный район</span>
+														</label>
+					                                </li>
+					                                <li class="search-picker__status" title="Ленинский район">
+					                                	<label>
+						                                	<input type="checkbox" name="district[lenin_district]">
+															<span>Ленинский район</span>
+														</label>
+					                                </li>
+					                                <li class="search-picker__status" title="Советский район">
+					                                	<label>
+						                                	<input type="checkbox" name="district[soviet_district]">
+															<span>Советский район</span>
+														</label>
+					                                </li>
+					                                <li class="search-picker__status" title="Центральный район">
+					                                	<label>
+						                                	<input type="checkbox" name="district[central_district]">
+															<span>Центральный район</span>
+														</label>
+					                                </li>
+					                            </ul>
+					                            <div class="object__search--buttons">
+					                            	<button class="apply">Применить</button>
+					                            	<button class="clear">Сбросить</button>
+					                            </div>
+					                        </div>
+					                    </div>
+					                </div>
+					            </div>
+
+				                <div class="flat__search--picker search--picker">
+				                    <input type="text" class="search-picker__button no-md" placeholder="Комнаты" value="" readonly>
+				                    <span class="search--picker-title md">Количество комнат</span>
+				                    <div class="search-picker__list-container">
+				                        <div class="search-picker__list-container-wrap">
+				                            <ul class="search-picker__list">
+				                                <li class="search-picker__status" title="1-комнатные">
+				                                	<label>
+														<input type="checkbox" name="flat[1-komnatnie]">
+														<span>1</span>
+													</label>
+				                                </li>
+				                                <li class="search-picker__status" title="2-комнатные">
+				                                	<label>
+														<input type="checkbox" name="flat[2-komnatnie]">
+														<span>2</span>
+													</label>
+				                                </li>
+				                                <li class="search-picker__status" title="3-комнатные">
+				                                	<label>
+														<input type="checkbox" name="flat[3-komnatnie]">
+														<span>3</span>
+													</label>
+				                                </li>
+				                                <li class="search-picker__status" title="4-комнатные и более">
+				                                	<label>
+														<input type="checkbox" name="flat[4-komnatnie]">
+														<span>4 и более</span>
+													</label>
+				                                </li>
+				                                <li class="search-picker__status" title="Студии">
+				                                	<label>
+					                                	<input type="checkbox" name="flat[studio]">
+					                                	<span>Студии</span>
+													</label>
+				                                </li>
+				                                <li class="search-picker__status" title="Свободной планировки">
+				                                	<label>
+														<input type="checkbox" name="flat[svob_planirovka]">
+														<span>Своб. планировка</span>
+													</label>
+				                                </li>
+				                                <li class="search-picker__status" title="Комнаты">
+				                                	<label>
+					                                	<input type="checkbox" name="flat[komnati]">
+					                                	<span>Комнаты</span>
+													</label>
+				                                </li>
+				                                <li class="search-picker__status" title="ЗГТ">
+				                                	<label>
+					                                	<input type="checkbox" name="flat[zgt]">
+					                                	<span>ЗГТ</span>
+													</label>
+				                                </li>
+				                            </ul>
+				                        </div>
+				                    </div>
+				                </div>
+
+				                <div class="popup__filter--main-row">
+					                <div class="area__search--picker search--picker">
+					                    <span class="search--picker-title">Площадь</span>
+					                    <div class="search-picker__list-container">
+					                        <div class="search-picker__list-container-wrap">
+					                            <div class="filter__parameter parameter-left">
+					                            	<input class="min-area" type="text" name="area_min" id="area_min" placeholder="от" value="">
+					                            	<span>m²</span>
+					                            </div>
+					                            <div class="filter__parameter parameter-right">
+					                            	<input class="max-area" type="text" name="area_max" id="area_max" placeholder="до" value="">
+					                            	<span>m²</span>
+					                            </div>
+					                        </div>
+					                    </div>
+					                </div>
+
+					                <div class="price__search--picker search--picker">
+					                    <span class="search--picker-title">Цена</span>
+					                    <div class="search-picker__list-container">
+					                        <div class="search-picker__list-container-wrap">
+					                            <div class="filter__parameter parameter-left">
+					                            	<input class="min-price" type="text" name="price_min" id="price_min" placeholder="от" value="">
+					                            	<span>₽</span>
+					                            </div>
+					                            <div class="filter__parameter parameter-right">
+					                            	<input class="max-price" type="text" name="price_max" id="price_max" placeholder="до" value="">
+					                            	<span>₽</span>
+					                            </div>
+					                        </div>
+					                    </div>
+					                </div>
+					            </div>			            
+
+							</div>
+						</form>
+				
+			</div>
+			<div class="popup__filter--btn">
+                <button class="filter--apply">
+                    Применить
+                </button>
+                <button class="filter--cancel" id="del_filter" type="button">
+                    Сбросить
+                </button>
+            </div>
+		</div>
+	</div>
+
+	<div class="wrapper">
+		<header>
+			<div class="header__top wow fadeIn" data-wow-delay="0.2s">
+				<div class="container">
+					<div class="header__top--left">
+						<div class="header__top--burger md">
+		                    <div class="burger">
+		                        <div class="burger__line"></div>
+		                        <div class="burger__line"></div>
+		                        <div class="burger__line"></div>
+		                    </div>
+		                </div>
+						<div class="header__top--logo">
+						    <a href="index.html" title="Аксиома - агентство недвижимости">
+						    	<picture>
+					                <source srcset="img/logo-mob.svg" media="(max-width: 767px)">
+					                <img class="logo" src="img/logo.svg" alt="Аксиома - агентство недвижимости">
+					            </picture>
+	                        </a>
+					    </div>
+					    <div class="header__top--menu no-md">
+							<nav class="header__menu--nav">
+		            			<ul>
+		            				<li><a href="about.html" class="header__menu--elem"><span>О компании</span></a></li>
+		            				<li><a href="object_list_property.html" class="header__menu--elem"><span>Недвижимость</span></a></li>
+		            				<li><a href="residential_complex.html" class="header__menu--elem"><span>Наши ЖК</span></a></li>
+		            				<li><a href="news.html" class="header__menu--elem"><span>Новости</span></a></li>
+		            				<li><a href="contacts.html" class="header__menu--elem"><span>Контакты</span></a></li>
+		                        </ul>
+							</nav>
+		                </div>
+					</div>
+					<div class="header__top--right">
+						<div class="header__top--contacts">
+							<div class="header__top--number-wrap no-xs">
+								<a class="header__top--number" href="tel:+74732717273">
+		                            +7 (473) 271-72-73
+		                        </a>
+		                        <a class="header__top--number" href="tel:+78002228242">
+		                            8 (800) 222 82 42
+		                        </a>
+							</div>
+	                        <button class="header__top--button">Заказать звонок</button>
+		                </div>
+					</div>
+				</div>
+			</div>
+			<div class="header__search wow fadeIn" data-wow-delay="0.3s">
+				<div class="container">
+					<div class="header__search--bg">
+						<h1>Найди свое жилье в Аксиоме</h1>
+						<form class="header__search--wrap">
+							<div class="header__search--inner">
+
+								<div class="object__search--picker search--picker">
+				                    <input type="text" class="search-picker__button no-md" placeholder="Объекты" value="" readonly>
+				                    <input type="text" class="search-picker__button md" placeholder="Выберите тип объекта" value="" readonly>
+				                    <div class="search-picker__list-container">
+				                        <div class="search-picker__list-container-wrap">
+				                        	<div class="object__search--picker-type">
+				                        		<div class="object__type object__type--housing active">
+				                        			<span>Жилая</span>
+				                        		</div>
+				                        		<div class="object__type object__type--commercial">
+				                        			<span>Коммерческая</span>
+				                        		</div>
+				                        	</div>
+				                            <ul class="search-picker__list search-picker__list-housing">
+				                                <li class="search-picker__status" title="Новостройки">
+				                                	<label>
+					                                	<input type="checkbox" name="object[novostroiki]">
+														<span>Новостройки</span>
+													</label>
+				                                </li>
+				                                <li class="search-picker__status" title="Вторичная недвижимость">
+				                                	<label>
+					                                	<input type="checkbox" name="object[vtor_nedvizh]">
+														<span>Вторичная недвижимость</span>
+													</label>
+				                                </li>
+				                                <li class="search-picker__status" title="Квартиры">
+				                                	<label>
+					                                	<input type="checkbox" name="object[kvartiry]">
+														<span>Квартиры</span>
+													</label>
+				                                </li>
+				                                <li class="search-picker__status" title="Дома">
+				                                	<label>
+					                                	<input type="checkbox" name="object[doma]">
+														<span>Дома</span>
+													</label>
+				                                </li>
+				                                <li class="search-picker__status" title="Комнаты">
+				                                	<label>
+				                                	<input type="checkbox" name="object[komnaty]">
+													<span>Комнаты</span>
+													</label>
+				                                </li>
+				                                <li class="search-picker__status" title="Гаражи">
+				                                	<label>
+					                                	<input type="checkbox" name="object[garagi]">
+														<span>Гаражи</span>
+													</label>
+				                                </li>
+				                                <li class="search-picker__status" title="Дачи">
+				                                	<label>
+					                                	<input type="checkbox" name="object[dachi]">
+														<span>Дачи</span>
+													</label>
+				                                </li>
+				                                <li class="search-picker__status" title="Участки">
+				                                	<label>
+					                                	<input type="checkbox" name="object[uchastki]">
+														<span>Участки</span>
+													</label>
+				                                </li>
+				                            </ul>
+
+				                            <ul class="search-picker__list search-picker__list-commercial">
+				                                <li class="search-picker__status" title="Офисы">
+				                                	<label>
+					                                	<input type="checkbox" name="object[office]">
+														<span>Офисы</span>
+													</label>
+				                                </li>
+				                                <li class="search-picker__status" title="Торговые площади">
+				                                	<label>
+					                                	<input type="checkbox" name="object[torg_plochad]">
+														<span>Торговые площади</span>
+													</label>
+				                                </li>
+				                                <li class="search-picker__status" title="Помещения свободного назначения">
+				                                	<label>
+					                                	<input type="checkbox" name="object[pomechenia_svob_naznach]">
+														<span>Помещения свободного назначения</span>
+													</label>
+				                                </li>
+				                            </ul>
+				                            <div class="object__search--buttons md">
+				                            	<button class="apply">Применить</button>
+				                            	<button class="clear">Сбросить</button>
+				                            </div>
+				                        </div>
+				                    </div>
+				                </div>
+
+				                <div class="flat__search--picker search--picker">
+				                    <input type="text" class="search-picker__button no-md" placeholder="Комнаты" value="" readonly>
+				                    <span class="search--picker-title md">Количество комнат</span>
+				                    <div class="search-picker__list-container">
+				                        <div class="search-picker__list-container-wrap">
+				                            <ul class="search-picker__list">
+				                                <li class="search-picker__status" title="1-комнатные">
+				                                	<label>
+				                                		<input type="checkbox" name="flat[1-komnatnie]">
+														<span class="no-md">1-комнатные</span>
+														<span class="md">1</span>
+													</label>
+				                                </li>
+				                                <li class="search-picker__status" title="2-комнатные">
+				                                	<label>
+				                                		<input type="checkbox" name="flat[2-komnatnie]">
+														<span class="no-md">2-комнатные</span>
+														<span class="md">2</span>
+													</label>
+				                                </li>
+				                                <li class="search-picker__status" title="3-комнатные">
+				                                	<label>
+				                                		<input type="checkbox" name="flat[3-komnatnie]">
+														<span class="no-md">3-комнатные</span>
+														<span class="md">3</span>
+													</label>
+				                                </li>
+				                                <li class="search-picker__status" title="4-комнатные и более">
+				                                	<label>
+				                                		<input type="checkbox" name="flat[4-komnatnie]">
+														<span class="no-md">4-комнатные и более</span>
+														<span class="md">4</span>
+													</label>
+				                                </li>
+				                                <li class="search-picker__status" title="Студии">
+				                                	<label>
+					                                	<input type="checkbox" name="flat[studio]">
+														<span>Студии</span>
+													</label>
+				                                </li>
+				                                <li class="search-picker__status" title="Свободной планировки">
+				                                	<label>
+				                                		<input type="checkbox" name="flat[svob_planirovka]">
+														<span class="no-md">Свободной планировки</span>
+														<span class="md">Своб. планировка</span>
+													</label>
+				                                </li>
+				                                <li class="search-picker__status no-md" title="Комнаты">
+				                                	<label>
+					                                	<input type="checkbox" name="flat[komnati]">
+														<span>Комнаты</span>
+													</label>
+				                                </li>
+				                                <li class="search-picker__status no-md" title="ЗГТ">
+				                                	<label>
+					                                	<input type="checkbox" name="flat[zgt]">
+														<span>ЗГТ</span>
+													</label>
+				                                </li>
+				                            </ul>
+				                        </div>
+				                    </div>
+				                </div>
+
+				                <div class="area__search--picker search--picker no-md">
+				                    <input type="text" class="search-picker__button" placeholder="Площадь" value="" readonly>
+				                    <div class="search-picker__list-container">
+				                        <div class="search-picker__list-container-wrap">
+				                            <div class="filter__parameter parameter-left">
+				                            	<input class="min-area" type="text" name="area_min" id="area_min" placeholder="от" value="">
+				                            	<span>m²</span>
+				                            </div>
+				                            <div class="filter__parameter parameter-right">
+				                            	<input class="max-area" type="text" name="area_max" id="area_max" placeholder="до" value="">
+				                            	<span>m²</span>
+				                            </div>
+				                        </div>
+				                    </div>
+				                </div>
+
+				                <div class="price__search--picker search--picker">
+				                    <input type="text" class="search-picker__button no-md" placeholder="Цена" value="" readonly>
+				                    <span class="search--picker-title md">Цена</span>
+				                    <div class="search-picker__list-container">
+				                        <div class="search-picker__list-container-wrap">
+				                            <div class="filter__parameter parameter-left">
+				                            	<input class="min-price" type="text" name="price_min" id="price_min" placeholder="от" value="">
+				                            	<span class="no-md">₽</span>
+				                            </div>
+				                            <div class="filter__parameter parameter-right">
+				                            	<input class="max-price" type="text" name="price_max" id="price_max" placeholder="до" value="">
+				                            	<span class="no-md">₽</span>
+				                            </div>
+				                        </div>
+				                    </div>
+				                </div>
+
+				                <div class="district__search--picker search--picker no-md">
+				                    <input type="text" class="search-picker__button" placeholder="Район" value="" readonly>
+				                    <div class="search-picker__list-container">
+				                        <div class="search-picker__list-container-wrap">
+				                            <ul class="search-picker__list">
+				                                <li class="search-picker__status" title="Воронежская область">
+				                                	<label>
+					                                	<input type="checkbox" name="district[voronezh_district]">
+														<span>Воронежская область</span>
+													</label>
+				                                </li>
+				                                <li class="search-picker__status" title="Железнодорожный район">
+				                                	<label>
+					                                	<input type="checkbox" name="district[jd_district]">
+														<span>Железнодорожный район</span>
+													</label>
+				                                </li>
+				                                <li class="search-picker__status" title="Центрально-Черноземный район ">
+				                                	<label>
+					                                	<input type="checkbox" name="district[central_chernoz_district]">
+														<span>Центрально-Черноземный район</span>
+													</label>
+				                                </li>
+				                                <li class="search-picker__status" title="Коминтерновский район">
+				                                	<label>
+					                                	<input type="checkbox" name="district[komintern_district]">
+														<span>Коминтерновский район</span>
+													</label>
+				                                </li>
+				                                <li class="search-picker__status" title="Левобережный район">
+				                                	<label>
+					                                	<input type="checkbox" name="district[levobereg_district]">
+														<span>Левобережный район</span>
+													</label>
+				                                </li>
+				                                <li class="search-picker__status" title="Ленинский район">
+				                                	<label>
+					                                	<input type="checkbox" name="district[lenin_district]">
+														<span>Ленинский район</span>
+													</label>
+				                                </li>
+				                                <li class="search-picker__status" title="Советский район">
+				                                	<label>
+					                                	<input type="checkbox" name="district[soviet_district]">
+														<span>Советский район</span>
+													</label>
+				                                </li>
+				                                <li class="search-picker__status" title="Центральный район">
+				                                	<label>
+					                                	<input type="checkbox" name="district[central_district]">
+														<span>Центральный район</span>
+													</label>
+				                                </li>
+				                            </ul>
+				                        </div>
+				                    </div>
+				                </div>
+
+				                <div class="class__search--picker search--picker no-md">
+				                    <input type="text" class="search-picker__button" placeholder="Класс жилья" value="" readonly>
+				                    <div class="search-picker__list-container">
+				                        <div class="search-picker__list-container-wrap">
+				                            <ul class="search-picker__list">
+				                                <li class="search-picker__status" title="Эконом">
+				                                	<label>
+					                                	<input type="checkbox" name="class[econom]">
+														<span>Эконом</span>
+													</label>
+				                                </li>
+				                                <li class="search-picker__status" title="Комфорт">
+				                                	<label>
+					                                	<input type="checkbox" name="class[comfort]">
+														<span>Комфорт</span>
+													</label>
+				                                </li>
+				                                <li class="search-picker__status" title="Бизнес">
+				                                	<label>
+					                                	<input type="checkbox" name="class[business]">
+														<span>Бизнес</span>
+													</label>
+				                                </li>
+				                                <li class="search-picker__status" title="VIP">
+				                                	<label>
+					                                	<input type="checkbox" name="class[vip]">
+														<span>VIP</span>
+													</label>
+				                                </li>
+				                            </ul>
+				                        </div>
+				                    </div>
+				                </div>
+
+							</div>
+							<button>Найти</button>
+							<span class="extended--search md">Расширенный поиск</span>
+							<div class="header__search--wrap-tablet md">
+								<span>Подобрать недвижимость</span>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="container">
+
+				<!-- КОНТЕНТНАЯ ОБЛАСТЬ (start) -->
+
+				<!-- Стили только для этой страницы -->
+				<style>
+					header {
+						border-bottom: 1px solid #F4F4F4;
+						height: 108px;
+					}
+					body .header__search {
+						display: none;
+					}
+					@media only screen and (max-width: 1199px) {
+						header {
+						    border-bottom: 0;
+						    height: auto;
+						}
+					}
+				</style>
+
+				<div class="breadcrumb no-md wow fadeIn" itemprop="http://schema.org/breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+					<span class="bx-breadcrumb-item" id="bx_breadcrumb_0" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<a href="index.html" title="Главная" itemprop="item">
+							<span itemprop="name">Главная</span>
+						</a>
+						<meta itemprop="position" content="1">
+					</span>
+					<span class="breadcrumb-separator">/</span>
+					<span class="bx-breadcrumb-item" id="bx_breadcrumb_0" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<a href="apartment_sale.html" title="Продажа квартир" itemprop="item">
+							<span itemprop="name">Продажа квартир</span>
+						</a>
+						<meta itemprop="position" content="2">
+					</span>
+					<span class="breadcrumb-separator">/</span>
+					<span class="breadcrumb__path">
+						<span>1-комн. квартира, 29.2 м², 10/17 эт.</span>
+					</span>
+				</div>
+
+				<div class="apartment__detail--container apartment-detail">
+					<h1>1-комн. квартира, 29.2 м², 10/17 эт.</h1>
+					<div class="apartment__card--detail">
+						<div class="apartment__card--left">
+							<div class="apartment__slider--vertical no-md">
+								<div class="apartment__slider--nav">
+									<div class="slider--nav-slide">
+										<picture>
+	                                        <source type="image/webp" srcset="img/apart1.webp">
+	                                        <img src="img/apart1.jpg" alt="1-комн. квартира, 29.2 м², 10/17 эт.">
+	                                    </picture>
+									</div>
+									<div class="slider--nav-slide">
+										<picture>
+	                                        <source type="image/webp" srcset="img/apart2.webp">
+	                                        <img src="img/apart2.jpg" alt="1-комн. квартира, 29.2 м², 10/17 эт.">
+	                                    </picture>
+									</div>
+									<div class="slider--nav-slide">
+										<picture>
+	                                        <source type="image/webp" srcset="img/apart3.webp">
+	                                        <img src="img/apart3.jpg" alt="1-комн. квартира, 29.2 м², 10/17 эт.">
+	                                    </picture>
+									</div>
+									<div class="slider--nav-slide">
+										<picture>
+	                                        <source type="image/webp" srcset="img/apart1.webp">
+	                                        <img src="img/apart1.jpg" alt="1-комн. квартира, 29.2 м², 10/17 эт.">
+	                                    </picture>
+									</div>
+									<div class="slider--nav-slide">
+										<picture>
+	                                        <source type="image/webp" srcset="img/apart4.webp">
+	                                        <img src="img/apart4.jpg" alt="1-комн. квартира, 29.2 м², 10/17 эт.">
+	                                    </picture>
+									</div>
+									<div class="slider--nav-slide">
+										<picture>
+	                                        <source type="image/webp" srcset="img/apart2.webp">
+	                                        <img src="img/apart2.jpg" alt="1-комн. квартира, 29.2 м², 10/17 эт.">
+	                                    </picture>
+									</div>
+									<div class="slider--nav-slide">
+										<picture>
+	                                        <source type="image/webp" srcset="img/apart3.webp">
+	                                        <img src="img/apart3.jpg" alt="1-комн. квартира, 29.2 м², 10/17 эт.">
+	                                    </picture>
+									</div>
+								</div>
+							</div>
+							<div class="apartment__slider--main">
+								<div class="apartment__slider--arrow-back no-md"></div>
+								<div class="apartment__slider--for">
+									<div class="slider--for-slide">
+										<a href="img/apart1.jpg" data-fancybox="gallery" title="1-комн. квартира, 29.2 м², 10/17 эт.">
+											<picture>
+		                                        <source type="image/webp" srcset="img/apart1.webp">
+		                                        <img src="img/apart1.jpg" alt="1-комн. квартира, 29.2 м², 10/17 эт.">
+		                                    </picture>
+	                                    </a>
+									</div>
+									<div class="slider--for-slide">
+										<a href="img/apart2.jpg" data-fancybox="gallery" title="1-комн. квартира, 29.2 м², 10/17 эт.">
+											<picture>
+		                                        <source type="image/webp" srcset="img/apart2.webp">
+		                                        <img src="img/apart2.jpg" alt="1-комн. квартира, 29.2 м², 10/17 эт.">
+		                                    </picture>
+	                                    </a>
+									</div>
+									<div class="slider--for-slide">
+										<a href="img/apart3.jpg" data-fancybox="gallery" title="1-комн. квартира, 29.2 м², 10/17 эт.">
+											<picture>
+		                                        <source type="image/webp" srcset="img/apart3.webp">
+		                                        <img src="img/apart3.jpg" alt="1-комн. квартира, 29.2 м², 10/17 эт.">
+		                                    </picture>
+	                                    </a>
+									</div>
+									<div class="slider--for-slide">
+										<a href="img/apart1.jpg" data-fancybox="gallery" title="1-комн. квартира, 29.2 м², 10/17 эт.">
+											<picture>
+		                                        <source type="image/webp" srcset="img/apart1.webp">
+		                                        <img src="img/apart1.jpg" alt="1-комн. квартира, 29.2 м², 10/17 эт.">
+		                                    </picture>
+	                                    </a>
+									</div>
+									<div class="slider--for-slide">
+										<a href="img/apart4.jpg" data-fancybox="gallery" title="1-комн. квартира, 29.2 м², 10/17 эт.">
+											<picture>
+		                                        <source type="image/webp" srcset="img/apart4.webp">
+		                                        <img src="img/apart4.jpg" alt="1-комн. квартира, 29.2 м², 10/17 эт.">
+		                                    </picture>
+	                                    </a>
+									</div>
+									<div class="slider--for-slide">
+										<a href="img/apart2.jpg" data-fancybox="gallery" title="1-комн. квартира, 29.2 м², 10/17 эт.">
+											<picture>
+		                                        <source type="image/webp" srcset="img/apart2.webp">
+		                                        <img src="img/apart2.jpg" alt="1-комн. квартира, 29.2 м², 10/17 эт.">
+		                                    </picture>
+	                                    </a>
+									</div>
+									<div class="slider--for-slide">
+										<a href="img/apart3.jpg" data-fancybox="gallery" title="1-комн. квартира, 29.2 м², 10/17 эт.">
+											<picture>
+		                                        <source type="image/webp" srcset="img/apart3.webp">
+		                                        <img src="img/apart3.jpg" alt="1-комн. квартира, 29.2 м², 10/17 эт.">
+		                                    </picture>
+	                                    </a>
+									</div>
+								</div>
+								<div class="apartment__slider--arrow-next no-md"></div>
+							</div>
+						</div>
+						<div class="apartment__card--right">
+							<span class="apartment__card--title"><a href="complex_detail.html">ЖК Высота</a>, ул. Артамонова, стр. 4 корп. 1</span>
+							<div class="apartment__card--characteristics">
+								<div class="characteristics__table">
+									<div class="characteristics__table--row">
+										<span class="characteristics__table--left">Площадь:</span>
+										<span class="characteristics__table--right">44,56 м2</span>
+									</div>
+									<div class="characteristics__table--row">
+										<span class="characteristics__table--left">Этаж:</span>
+										<span class="characteristics__table--right">2 из 20</span>
+									</div>
+									<div class="characteristics__table--row">
+										<span class="characteristics__table--left">Секция (подъезд):</span>
+										<span class="characteristics__table--right">1</span>
+									</div>
+									<div class="characteristics__table--row">
+										<span class="characteristics__table--left">Количество комнат:</span>
+										<span class="characteristics__table--right">2</span>
+									</div>
+									<div class="characteristics__table--row">
+										<span class="characteristics__table--left">Дата сдачи дома</span>
+										<span class="characteristics__table--right">4 кв. 2021</span>
+									</div>
+								</div>
+								<a href="#apartment__characteristics">Все характеристики</a>
+							</div>
+							<span class="apartment__card--price">6 700 000 руб.</span>
+							<span class="apartment__card--price-meter">125 562 ₽ за м²</span>
+							<div class="appartment__row--wrap">
+								<button class="book-apartment">Забронировать</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="apartment__detail--description">
+				<div class="container">
+					<h3>Описание</h3>
+					<p>Продается однокомнатная квартира в современном ЖК "Аквамарин" расположенном в Железнодорожном районе города Воронежа, по ул. Артамонова, 4.</p>
+					<p>Жить на набережной, дышать свежим воздухом, каждый день гулять в парке рядом с домом — все это реальность для владельцев квартир ЖК "Аквамарин", который расположился в экологически чистом районе города на левом берегу Воронежа. Геометричные фасады жилого комплекса выполнены из экологичных материалов терракотовых, песочных и лазурных оттенков. Оригинальная «пиксельная» кладка кирпича подчеркивает особое настроение и характер жилого комплекса, выгодно выделяя дома на фоне общей застройки. Удобное месторасположение дома, развитая инфраструктура. Поликлиника, детские сады, школы, остановка, магазины. На первом этаже комплекса расположены коммерческие помещения. Можно подобрать планировку и этажи. Дополнительно заказать отделку.</p>
+				</div>
+			</div>
+			<div class="container">
+				<div class="apartment__detail--container">
+					<div class="apartment__characteristics" id="apartment__characteristics">
+						<h3>Характеристики</h3>
+						<div class="apartment__characteristics--list">
+							<div class="apartment__characteristics--row">
+								<span class="apartment__characteristics--left">Цена:</span>
+								<span class="apartment__characteristics--right">6 700 000 руб.</span>
+							</div>
+							<div class="apartment__characteristics--row">
+								<span class="apartment__characteristics--left">Площадь:</span>
+								<span class="apartment__characteristics--right">44,56 м2</span>
+							</div>
+							<div class="apartment__characteristics--row">
+								<span class="apartment__characteristics--left">Секция (подъезд):</span>
+								<span class="apartment__characteristics--right">1</span>
+							</div>
+							<div class="apartment__characteristics--row">
+								<span class="apartment__characteristics--left">Этаж:</span>
+								<span class="apartment__characteristics--right">2 из 20</span>
+							</div>
+							<div class="apartment__characteristics--row">
+								<span class="apartment__characteristics--left">Тип помещения:</span>
+								<span class="apartment__characteristics--right">Квартира</span>
+							</div>
+							<div class="apartment__characteristics--row">
+								<span class="apartment__characteristics--left">Количество комнат:</span>
+								<span class="apartment__characteristics--right">2</span>
+							</div>
+							<div class="apartment__characteristics--row">
+								<span class="apartment__characteristics--left">Дата сдачи дома</span>
+								<span class="apartment__characteristics--right">4 кв. 2021</span>
+							</div>
+							<div class="apartment__characteristics--row">
+								<span class="apartment__characteristics--left">Количество этажей</span>
+								<span class="apartment__characteristics--right">20</span>
+							</div>
+							<div class="apartment__characteristics--row">
+								<span class="apartment__characteristics--left">Статус стройки</span>
+								<span class="apartment__characteristics--right">Строится</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- КОНТЕНТНАЯ ОБЛАСТЬ (end) -->
+				
+			</div>
+		</main>
+		<footer>
+			<div class="footer__main wow fadeIn">
+				<div class="container">
+					<div class="footer__nav">
+						<div class="nav__column">
+							<a href="index.html" class="nav__column--title">Аксиома</a>
+							<ul>
+								<li>
+									<a href="about.html">О компании</a>
+								</li>
+								<li>
+									<a href="residential_complex.html">Наши ЖК</a>
+								</li>
+								<li>
+									<a href="news.html">Новости</a>
+								</li>
+								<li>
+									<a href="contacts.html">Контакты</a>
+								</li>
+							</ul>
+						</div>
+						<div class="nav__column">
+							<a href="object_list_property.html" class="nav__column--title">Недвижимость</a>
+							<ul>
+								<li>
+									<a href="object_list_property.html">Квартиры</a>
+								</li>
+								<li>
+									<a href="object_list_property.html">Новостройки</a>
+								</li>
+								<li>
+									<a href="object_list_property.html">Дома</a>
+								</li>
+								<li>
+									<a href="object_list_property.html">Дачи</a>
+								</li>
+								<li>
+									<a href="object_list_property.html">Комнаты</a>
+								</li>
+								<li>
+									<a href="object_list_property.html">Гаражи</a>
+								</li>
+								<li>
+									<a href="object_list_property.html">Земля</a>
+								</li>
+							</ul>
+						</div>
+						<div class="social__block md no-xs">
+							<a href="javascript:void(0);"><img src="img/instagram.svg" alt="instagram"></a>
+							<a href="javascript:void(0);"><img src="img/vk.svg" alt="vk"></a>
+						</div>
+					</div>
+					<div class="footer__contacts">
+						<div class="cotacts__column">
+							<a class="contacts__email" href="mailto:aksiomavrn@mail.ru">aksiomavrn@mail.ru</a>
+							<a class="contacts__address" target="_blank" href="https://yandex.ru/maps/?text=Воронеж, ул. Пушкинская, 4А">394036, Воронеж, <br class="no-xs"> ул. Пушкинская, д. 4А, <br class="no-xs">оф. 501, 5 эт.</a>
+							<div class="social__block xs">
+								<a href="javascript:void(0);"><img src="img/instagram.svg" alt="instagram"></a>
+								<a href="javascript:void(0);"><img src="img/vk.svg" alt="vk"></a>
+							</div>
+						</div>
+						<div class="cotacts__column">
+							<a class="contacts__number" href="tel:+74732717273">+7 (473) 271-72-73</a>
+							<a class="contacts__number" href="tel:+78002228242">8 (800) 222 82 42</a>
+							<button>Заказать звонок</button>
+							<div class="social__block no-md">
+								<a href="javascript:void(0);"><img src="img/instagram.svg" alt="instagram"></a>
+								<a href="javascript:void(0);"><img src="img/vk.svg" alt="vk"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom fadeIn">
+				<div class="container">
+					<div class="footer__copyright">
+						<span class="no-xs">© 2021 Агентство недвижимости «Аксиома», Все права защищены</span>
+						<span class="xs">© 2021 «Аксиома», Все права защищены</span>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div class="wrapper__shadow--popup no-xs"></div>
+
+	<!-- Всплывающее окно "Заказать звонок" -->
+	<noindex>
+		<div class="popup__form">
+			<div class="popup__form--title">Заказать звонок</div>
+			<div class="popup__close"><img src="img/close.svg" alt="Закрыть"></div>
+			<form action="">
+				<label>Ваше имя<span>*</span>:</label>
+				<input name="NAME_REVIEWS" id="name" type="text" required="">
+				<label>Ваш телефон<span>*</span>:</label>
+				<input class="clear-after-submit" type="tel" name="PHONE" required="required">
+				<div class="form__policy no-xs">
+					<input type="checkbox" class="custom-checkbox" id="policy__box" name="POLICY" required="" checked=""> 
+					<label for="policy__box" class="policy--label">Я согласен(а) на <a href="javascript:void(0);" rel="nofollow" onclick="window.open('/clients/policy/', '/_blank/');">обработку персональных данных</a></label>
+				</div>
+				<div class="form__buttons">
+					<button class="request-a-call" value="Submit" name="submit">Заказать звонок</button>
+					<button class="cancel">Сбросить</button>
+				</div>
+			</form>
+		</div>
+	</noindex>
+
+	<!-- Всплывающее окно "Ваша заявка отправлена" -->
+	<noindex>
+	    <div class="popup__form--send">
+	        <div class="popup__close"><img src="img/close.svg" alt="Закрыть"></div>
+	        <div class="popup__form--send-wrap">
+	            <img src="img/form_plane.svg" alt="">
+	            <div class="popup__form--title">Ваша заявка отправлена</div>
+	            <button>Закрыть</button>
+	        </div>
+	    </div>
+	</noindex>
+
+	<!--  JS  -->
+	<script src="scripts/lib.js"></script>
+	<script src="scripts/script.js"></script>
+
+</body>
+</html>
